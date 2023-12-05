@@ -1,0 +1,70 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="`^kd8{w!]-5SVLoqG_An" x="136" y="92">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="robocarv2" id="S!)BoPn4g%+[A2#VbrZ0" x="56" y="138">
+    <next>
+      <block type="serial_print" id="T7;*~LAghb^LkG!HW^zz">
+        <field name="SERIAL_ID">Serial</field>
+        <field name="NEW_LINE">TRUE</field>
+        <value name="CONTENT">
+          <block type="text" id="iX}~Aa.@gaASp@F#y,)I">
+            <field name="TEXT">A6</field>
+          </block>
+        </value>
+        <next>
+          <block type="serial_print" id="ez`M!dX,?{Lj750vYqq(">
+            <field name="SERIAL_ID">Serial</field>
+            <field name="NEW_LINE">TRUE</field>
+            <value name="CONTENT">
+              <block type="io_analogread" id="Rb{ncQhNpEt@FJO4dO5D">
+                <field name="PIN">A6</field>
+              </block>
+            </value>
+            <next>
+              <block type="time_delay" id="M^Z|j}+FUZatQmjv3Yh8">
+                <value name="DELAY_TIME_MILI">
+                  <block type="math_number" id="h5M4;Tz!bWSlS4QiHD!5">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="serial_print" id="612i31+IS?7pCyo_f(WH">
+                    <field name="SERIAL_ID">Serial</field>
+                    <field name="NEW_LINE">TRUE</field>
+                    <value name="CONTENT">
+                      <block type="text" id="IL%rJD+bJf!OK0I,gX^;">
+                        <field name="TEXT">A7</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="serial_print" id="zixM+nXi!^eDBzK*2u93">
+                        <field name="SERIAL_ID">Serial</field>
+                        <field name="NEW_LINE">TRUE</field>
+                        <value name="CONTENT">
+                          <block type="io_analogread" id="sgBFXFf}KjTlMpJ:n;LQ">
+                            <field name="PIN">A7</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="time_delay" id="KS|_.A`1^OYFgXct;l^!">
+                            <value name="DELAY_TIME_MILI">
+                              <block type="math_number" id="+MhwN)GxFUZ=7y?udU8@">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

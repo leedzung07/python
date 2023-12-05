@@ -1,0 +1,543 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="robocarv2" id="hJVtyazKrrUJK**oQoI-" x="44" y="-79">
+    <next>
+      <block type="kcbot_servo" id="lb1.0ZD^GmZm=4q5g`H,">
+        <field name="servo">1</field>
+        <field name="angle">90</field>
+        <next>
+          <block type="kcbot_servo" id="AHpreN7{`o`Wv6nT1Xt+">
+            <field name="servo">0</field>
+            <field name="angle">60</field>
+            <next>
+              <block type="time_delay" id="{L`GV+tCvYO~HRbAJIMG">
+                <value name="DELAY_TIME_MILI">
+                  <block type="math_number" id="QfdLn+DKu5./yrKkGzYj">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="kcbot_servo" id="T!mmlbf|=]kIic}+Z]EU">
+                    <field name="servo">1</field>
+                    <field name="angle">0</field>
+                    <next>
+                      <block type="time_delay" id="p2KgtqR)4?bv2ox/K3-#">
+                        <value name="DELAY_TIME_MILI">
+                          <block type="math_number" id="L@/OCp~k9KBhq|hlMiw/">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="kcbot_servo" id="NoRk4q{Qul)8-A~Y9lHp">
+                            <field name="servo">0</field>
+                            <field name="angle">0</field>
+                            <next>
+                              <block type="time_delay" id="1lNkENfBt]iEv*3HDt7j">
+                                <value name="DELAY_TIME_MILI">
+                                  <block type="math_number" id="F5Hm`Jyh5@==n;q^ag8Q">
+                                    <field name="NUM">1000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="kcbot_motor" id="-[PCk0u%jRf)SyVBO5hP">
+                                    <field name="MOTOR">0</field>
+                                    <value name="SPEED">
+                                      <block type="math_number" id="_2noRZxt/E|O1,}jcLEl">
+                                        <field name="NUM">255</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="kcbot_motor" id="+{_@N,~h|+u]A!DvP,yE">
+                                        <field name="MOTOR">1</field>
+                                        <value name="SPEED">
+                                          <block type="math_number" id="]m:}[6u[V_s]):EZuB3m">
+                                            <field name="NUM">255</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="time_delay" id="6zmByUL;er0*y}zV!PMk">
+                                            <value name="DELAY_TIME_MILI">
+                                              <block type="math_number" id="Kn~iAXA@R[!PI9:ot{}c">
+                                                <field name="NUM">1000</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="loop_forever" id="h[!/8RFj|Tbb|Z/`w-!d">
+                                                <statement name="DO">
+                                                  <block type="controls_if" id="L8-cRn9]`??R1|]*{}Ue">
+                                                    <mutation else="1"></mutation>
+                                                    <value name="IF0">
+                                                      <block type="logic_compare" id="m)!T9}z{F6f0sB~-F/ql">
+                                                        <field name="OP">GT</field>
+                                                        <value name="A">
+                                                          <block type="io_analogread" id="3R1;Bf)JJ:C@Cn[g44nq">
+                                                            <field name="PIN">A6</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="math_number" id="Ek0*Kn?Yb@f4*GB)`8}r">
+                                                            <field name="NUM">750</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO0">
+                                                      <block type="controls_if" id="*-~NRLCQ!W4/FP,EB_Du">
+                                                        <mutation else="1"></mutation>
+                                                        <value name="IF0">
+                                                          <block type="logic_compare" id="HB-ZHQ7C|n8DStdhY;ef">
+                                                            <field name="OP">GT</field>
+                                                            <value name="A">
+                                                              <block type="io_analogread" id="U4GcVZ1L|s54#*33(iJw">
+                                                                <field name="PIN">A7</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="math_number" id="=AIh.1#Kg_aJtg.:It-P">
+                                                                <field name="NUM">750</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO0">
+                                                          <block type="controls_if" id="loW~ck)wvm5TGhD:Nn3d">
+                                                            <mutation else="1"></mutation>
+                                                            <value name="IF0">
+                                                              <block type="logic_compare" id="1_}L^U`d(xERR:JF1M38">
+                                                                <field name="OP">GT</field>
+                                                                <value name="A">
+                                                                  <block type="io_analogread" id="2{dsyrTY-rhn+.?-a%7a">
+                                                                    <field name="PIN">A4</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="math_number" id="0~CmETial1j2vE)03lG-">
+                                                                    <field name="NUM">850</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO0">
+                                                              <block type="controls_if" id="b2c+cCT3y0@G=ah42g7b">
+                                                                <mutation else="1"></mutation>
+                                                                <value name="IF0">
+                                                                  <block type="logic_compare" id="@EdxX~JXoed93ZYw]Kmc">
+                                                                    <field name="OP">GT</field>
+                                                                    <value name="A">
+                                                                      <block type="io_analogread" id="ykhGJY9pc.Ri6gVx%=JD">
+                                                                        <field name="PIN">A5</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="SHkF1S6]hy3H-w(H7~-}">
+                                                                        <field name="NUM">850</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <statement name="DO0">
+                                                                  <block type="kcbot_motor" id="J*NUr2dM/@7%Wos^k^3a">
+                                                                    <field name="MOTOR">0</field>
+                                                                    <comment pinned="true" h="80" w="160">Gặp vạch đen ngang</comment>
+                                                                    <value name="SPEED">
+                                                                      <block type="math_number" id="s)Ks%/o=t1za@jVOx.YF">
+                                                                        <field name="NUM">0</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="kcbot_motor" id="nE9#z]x?g+TF!KA!M4.h">
+                                                                        <field name="MOTOR">1</field>
+                                                                        <value name="SPEED">
+                                                                          <block type="math_number" id="!o,@D:P[A2k9PeVqf=Pk">
+                                                                            <field name="NUM">0</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="time_delay" id="vwwT%g7r2toUu]_jk)am">
+                                                                            <value name="DELAY_TIME_MILI">
+                                                                              <block type="math_number" id="#T32QBJo}rcQwYTx7}/-">
+                                                                                <field name="NUM">100</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="math_change" id="ECWgK9kI}GH_hS+{Q(i,">
+                                                                                <field name="VAR">dem</field>
+                                                                                <value name="DELTA">
+                                                                                  <block type="math_number" id="fFZ.IVFkeQ*RT|OWF!be">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="controls_if" id="6.X`!QD]}?qM%teQ,PLS">
+                                                                                    <value name="IF0">
+                                                                                      <block type="logic_compare" id="f1ig{R(W_K#d-HQlbI@W">
+                                                                                        <field name="OP">EQ</field>
+                                                                                        <value name="A">
+                                                                                          <block type="variables_get" id="4A%b#+bVg)@hva3qVQy(">
+                                                                                            <field name="VAR">dem</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block type="math_number" id=",Z_?XAJR`;|i%v/30wr,">
+                                                                                            <field name="NUM">1</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <statement name="DO0">
+                                                                                      <block type="io_digitalwrite" id="ff+2W0+i(QWE]8s:zAP?">
+                                                                                        <field name="PIN">13</field>
+                                                                                        <value name="STATE">
+                                                                                          <block type="io_highlow" id="`E81W:RY|:}D}OesqkR-">
+                                                                                            <field name="STATE">HIGH</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <next>
+                                                                                          <block type="kcbot_motor" id="A56(X5pR{7on0=3tJ%5!">
+                                                                                            <field name="MOTOR">0</field>
+                                                                                            <comment pinned="false" h="80" w="160">Rẽ phải</comment>
+                                                                                            <value name="SPEED">
+                                                                                              <block type="math_number" id="@[4@(9G5bsv:kN_7QW..">
+                                                                                                <field name="NUM">250</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <next>
+                                                                                              <block type="kcbot_motor" id="rIJh?_.m|wxXbKkI8AHX">
+                                                                                                <field name="MOTOR">1</field>
+                                                                                                <value name="SPEED">
+                                                                                                  <block type="math_number" id="I91iL-|CYVfwTP)U%oHf">
+                                                                                                    <field name="NUM">0</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="time_delay" id="Sgtr]8Tv}Mhw]0M!i^ni">
+                                                                                                    <value name="DELAY_TIME_MILI">
+                                                                                                      <block type="math_number" id="Ch}iA%8z=(Hme2~,^ZLS">
+                                                                                                        <field name="NUM">500</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <next>
+                                                                                                      <block type="io_digitalwrite" id="_}1B,^UfPZr!~0j+arPY">
+                                                                                                        <field name="PIN">13</field>
+                                                                                                        <value name="STATE">
+                                                                                                          <block type="io_highlow" id="a0t,V6R^Rzq;mKVT!s1;">
+                                                                                                            <field name="STATE">LOW</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="variables_set" id="`tvk-SE!P73)yv=a8DFz">
+                                                                                                            <field name="VAR">dem</field>
+                                                                                                            <value name="VALUE">
+                                                                                                              <block type="math_number" id="vHy:4#+g=G.Zo:+-9Wt%">
+                                                                                                                <field name="NUM">1</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </statement>
+                                                                                    <next>
+                                                                                      <block type="controls_if" id="jQjF@wg+tr??uF/cL3n@">
+                                                                                        <value name="IF0">
+                                                                                          <block type="logic_compare" id="Dml/AlK+hwf{+Z?({%pk">
+                                                                                            <field name="OP">EQ</field>
+                                                                                            <value name="A">
+                                                                                              <block type="variables_get" id="772^fg5tYUj{7tBYzu6+">
+                                                                                                <field name="VAR">dem</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="B">
+                                                                                              <block type="math_number" id="OP=F.JayM=3A|1I9U7yJ">
+                                                                                                <field name="NUM">2</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <statement name="DO0">
+                                                                                          <block type="io_digitalwrite" id="AiAOfr~AGyRJ6^XPdeOo">
+                                                                                            <field name="PIN">13</field>
+                                                                                            <value name="STATE">
+                                                                                              <block type="io_highlow" id="6]9ojL9OaTO~2}y`y=jW">
+                                                                                                <field name="STATE">HIGH</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <next>
+                                                                                              <block type="kcbot_motor" id="7Me5j,OBp}TCmnoAT@|g">
+                                                                                                <field name="MOTOR">0</field>
+                                                                                                <value name="SPEED">
+                                                                                                  <block type="math_number" id="Y@}a#qzP{HYp-fzl9T`,">
+                                                                                                    <field name="NUM">200</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="kcbot_motor" id="nLggXjoL)ONq(Q24;Jz;">
+                                                                                                    <field name="MOTOR">1</field>
+                                                                                                    <value name="SPEED">
+                                                                                                      <block type="math_number" id="sURva94m;`oiFj:H(v!3">
+                                                                                                        <field name="NUM">200</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <next>
+                                                                                                      <block type="time_delay" id="2SZZXp:%:/dF_p:?F@RB">
+                                                                                                        <value name="DELAY_TIME_MILI">
+                                                                                                          <block type="math_number" id="cnHckHoX7d!KWRK^^@Qr">
+                                                                                                            <field name="NUM">800</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="kcbot_motor" id="R[HSqNxJUKPWc2QeOb)K">
+                                                                                                            <field name="MOTOR">0</field>
+                                                                                                            <value name="SPEED">
+                                                                                                              <block type="math_number" id="cAe%-/,Vt+P[0G4p~rk4">
+                                                                                                                <field name="NUM">0</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <next>
+                                                                                                              <block type="kcbot_motor" id="]amH74uv_[U`#Skci!vP">
+                                                                                                                <field name="MOTOR">1</field>
+                                                                                                                <value name="SPEED">
+                                                                                                                  <block type="math_number" id="]R^PiU;haCut?{O`C)iM">
+                                                                                                                    <field name="NUM">0</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                                <next>
+                                                                                                                  <block type="time_delay" id="AGTpkddiY|naj.xiPze~">
+                                                                                                                    <value name="DELAY_TIME_MILI">
+                                                                                                                      <block type="math_number" id="3e(@~@W*e}5z+~4Cu8K=">
+                                                                                                                        <field name="NUM">550</field>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <next>
+                                                                                                                      <block type="kcbot_servo" id="LL?H*m^u}nOzbqZs_R42">
+                                                                                                                        <field name="servo">0</field>
+                                                                                                                        <field name="angle">60</field>
+                                                                                                                        <next>
+                                                                                                                          <block type="time_delay" id="(E?5;/K+LzfxMt?xrgX_">
+                                                                                                                            <value name="DELAY_TIME_MILI">
+                                                                                                                              <block type="math_number" id="1V@v/W`NR1?bZfb2j48Y">
+                                                                                                                                <field name="NUM">1000</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                            <next>
+                                                                                                                              <block type="kcbot_servo" id=":P9YMZ6v.}|Ho5/d%8UC">
+                                                                                                                                <field name="servo">1</field>
+                                                                                                                                <field name="angle">90</field>
+                                                                                                                                <next>
+                                                                                                                                  <block type="time_delay" id="~tRH088lJe.d-3bSDH`H">
+                                                                                                                                    <value name="DELAY_TIME_MILI">
+                                                                                                                                      <block type="math_number" id="n}:*pD7?8}JahU.nC+?^">
+                                                                                                                                        <field name="NUM">1000</field>
+                                                                                                                                      </block>
+                                                                                                                                    </value>
+                                                                                                                                  </block>
+                                                                                                                                </next>
+                                                                                                                              </block>
+                                                                                                                            </next>
+                                                                                                                          </block>
+                                                                                                                        </next>
+                                                                                                                      </block>
+                                                                                                                    </next>
+                                                                                                                  </block>
+                                                                                                                </next>
+                                                                                                              </block>
+                                                                                                            </next>
+                                                                                                          </block>
+                                                                                                        </next>
+                                                                                                      </block>
+                                                                                                    </next>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </statement>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </statement>
+                                                                <statement name="ELSE">
+                                                                  <block type="kcbot_motor" id="[z?PkRp_a(g]T2jw[2W[">
+                                                                    <field name="MOTOR">0</field>
+                                                                    <value name="SPEED">
+                                                                      <block type="math_number" id="FLbj:.T!c;B{9RIqL_6;">
+                                                                        <field name="NUM">150</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="kcbot_motor" id="#cRurL#L`-OuHm8g-Krl">
+                                                                        <field name="MOTOR">1</field>
+                                                                        <value name="SPEED">
+                                                                          <block type="math_number" id="b;6R.`=`pnN/w#X5B_oy">
+                                                                            <field name="NUM">250</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </statement>
+                                                              </block>
+                                                            </statement>
+                                                            <statement name="ELSE">
+                                                              <block type="controls_if" id="d[*XyP8I?vl`uF7*wD!J">
+                                                                <mutation else="1"></mutation>
+                                                                <value name="IF0">
+                                                                  <block type="logic_compare" id="3HL7s9a=jE^I}xZ-6qa8">
+                                                                    <field name="OP">GT</field>
+                                                                    <value name="A">
+                                                                      <block type="io_analogread" id="(BRa~r;F`YaSnqmX;+v{">
+                                                                        <field name="PIN">A5</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="mG;7Ee];@4_8DiaNpelL">
+                                                                        <field name="NUM">850</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <statement name="DO0">
+                                                                  <block type="kcbot_motor" id="pZX_JM#R5Uym)gY|aa~R">
+                                                                    <field name="MOTOR">0</field>
+                                                                    <value name="SPEED">
+                                                                      <block type="math_number" id="PQTg2Cx3!|q^i*.?,Tbs">
+                                                                        <field name="NUM">200</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="kcbot_motor" id="C]K!U_,!@xs[s7jGwV?5">
+                                                                        <field name="MOTOR">1</field>
+                                                                        <value name="SPEED">
+                                                                          <block type="math_number" id="R8@+*e7RU{6^f,ap6?|3">
+                                                                            <field name="NUM">240</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </statement>
+                                                                <statement name="ELSE">
+                                                                  <block type="kcbot_motor" id="dI*BL_)F3{x;8tHeWY~x">
+                                                                    <field name="MOTOR">0</field>
+                                                                    <value name="SPEED">
+                                                                      <block type="math_number" id="MyRcB6T?ChTZBHwi)Md7">
+                                                                        <field name="NUM">240</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="kcbot_motor" id="0Qc`|O:h/JfxK4rqF4re">
+                                                                        <field name="MOTOR">1</field>
+                                                                        <value name="SPEED">
+                                                                          <block type="math_number" id="Mpm-@hE/q_-DRJ=;?z=x">
+                                                                            <field name="NUM">200</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </statement>
+                                                              </block>
+                                                            </statement>
+                                                          </block>
+                                                        </statement>
+                                                        <statement name="ELSE">
+                                                          <block type="kcbot_motor" id="`{/g.nLUlL35wPCpNDhK">
+                                                            <field name="MOTOR">0</field>
+                                                            <value name="SPEED">
+                                                              <block type="math_number" id="l8ZruJAdmjV|HtK}DGyc">
+                                                                <field name="NUM">250</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="kcbot_motor" id="F9kyg[8cuYknsfO5clw?">
+                                                                <field name="MOTOR">1</field>
+                                                                <value name="SPEED">
+                                                                  <block type="math_number" id="~q};-1g#2=A8XoGmb[S2">
+                                                                    <field name="NUM">200</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </statement>
+                                                      </block>
+                                                    </statement>
+                                                    <statement name="ELSE">
+                                                      <block type="controls_if" id=")T2=LH7oiFr-8yV~m=as">
+                                                        <value name="IF0">
+                                                          <block type="logic_compare" id="q#p^D8^q`8opz#pt(+sO">
+                                                            <field name="OP">GT</field>
+                                                            <value name="A">
+                                                              <block type="io_analogread" id="1`R/_O@.%R/7)*7_ua]~">
+                                                                <field name="PIN">A7</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="math_number" id="u]l}Wv^p;:;S0_Y0BVuL">
+                                                                <field name="NUM">720</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO0">
+                                                          <block type="kcbot_motor" id="]Y=ne}c4})b~.dRTWg+v">
+                                                            <field name="MOTOR">0</field>
+                                                            <value name="SPEED">
+                                                              <block type="math_number" id="q#G-7czrnW6Vh)5Jh6##">
+                                                                <field name="NUM">200</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="kcbot_motor" id="M`@!:T6yHWIwnOoZ6pxz">
+                                                                <field name="MOTOR">1</field>
+                                                                <value name="SPEED">
+                                                                  <block type="math_number" id="ON+#zvYJ!5onOB0~Ey^|">
+                                                                    <field name="NUM">250</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </statement>
+                                                      </block>
+                                                    </statement>
+                                                  </block>
+                                                </statement>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
